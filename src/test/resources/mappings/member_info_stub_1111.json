@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/v1/member-info",
+    "headers" : {
+      "X-EXTRA-ID" : {
+        "matches" : "1111"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody":
+      {
+        "id": "1827ace6-e1a4-44a0-ae5b-4a93d31c5f0c",
+        "memberId":1111,
+        "statusType":"INACTIVE",
+        "givenName":"Michael",
+        "familyName":"Brown",
+        "dateOfBirth":"2021-02-02",
+        "address":{
+          "city":"Yonkers",
+          "state":"NY",
+          "country":"US",
+          "postalCode":"111111"
+        },
+        "products":[
+          {
+            "code":"NY543",
+            "name":"Annual Benefit",
+            "type":"DISCOUNT"
+          },
+          {
+            "code":"NM347",
+            "name":"Monthly Benefit",
+            "type":"GIFT"
+          }
+        ],
+        "creationMillis":1612272859657
+      },
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Server": "wire_mock/server",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+}

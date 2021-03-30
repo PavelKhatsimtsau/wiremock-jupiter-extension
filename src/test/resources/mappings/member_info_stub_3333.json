@@ -1,0 +1,47 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/v1/member-info",
+    "headers" : {
+      "X-EXTRA-ID" : {
+        "matches" : "3333"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody":
+      {
+        "id": "8a97ec50-3ef5-4b43-8da4-e77c53b49b60",
+        "memberId":3333,
+        "statusType":"ACTIVATED",
+        "givenName":"Michael",
+        "familyName":"Green",
+        "dateOfBirth":"2019-02-02",
+        "address":{
+          "city":"Boston",
+          "state":"AL",
+          "country":"US",
+          "postalCode":"555555"
+        },
+        "products":[
+          {
+            "code":"NY313",
+            "name":"Annual Benefit",
+            "type":"DISCOUNT"
+          },
+          {
+            "code":"NM357",
+            "name":"Monthly Benefit",
+            "type":"NONE"
+          }
+        ],
+        "creationMillis":1612272859657
+      },
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Server": "wire_mock/server",
+      "Transfer-Encoding": "chunked"
+    }
+  }
+}
